@@ -34,4 +34,6 @@ module "node_pool" {
 
   service_account_email                 = local.service_account_email
   disable_per_node_pool_service_account = local.service_account_email == null ? false : true
+
+  network_config = local.network_config
 }
