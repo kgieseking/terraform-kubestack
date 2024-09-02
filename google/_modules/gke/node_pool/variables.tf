@@ -119,6 +119,12 @@ variable "taints" {
   default     = null
 }
 
+variable "instance_tags" {
+  type = list(string)
+  description = "List of instance tags to apply to nodes."
+  default = []
+}
+
 variable "node_locations" {
   type        = list(string)
   description = "List of zones in the cluster's region to start worker nodes in. Defaults to cluster's node locations."

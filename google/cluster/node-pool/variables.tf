@@ -38,6 +38,8 @@ variable "configuration" {
       create_pod_range     = bool
       pod_ipv4_cidr_block  = string
     }))
+
+    instance_tags = optional(list(string))
   }))
   description = "Map with per workspace cluster configuration."
 }
