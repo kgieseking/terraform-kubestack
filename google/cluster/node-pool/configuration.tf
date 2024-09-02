@@ -39,4 +39,6 @@ locals {
   service_account_email = local.cfg["service_account_email"]
 
   network_config = local.cfg["network_config"]
+
+  instance_tags = local.cfg["instance_tags"]
 }

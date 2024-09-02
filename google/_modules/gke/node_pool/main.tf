@@ -41,7 +41,7 @@ resource "google_container_node_pool" "current" {
 
     labels = var.metadata_labels
 
-    tags = var.metadata_tags
+    tags = concat(var.metadata_tags, var.instance_tags)
 
     workload_metadata_config {
       mode = var.node_workload_metadata_config
